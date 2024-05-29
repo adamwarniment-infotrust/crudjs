@@ -20,8 +20,21 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/index.css">
+
+         <!-- Widget JavaScript bundle -->
+         <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
+
     </head>
     <body>
-        hello world
+       
+        <!-- Search widget element is not visible by default -->
+        <gen-search-widget
+        configId="a9081cc1-75b0-4f67-8cc2-79eebb9eaf14"
+        triggerId="searchWidgetTrigger">
+        </gen-search-widget>
+
+        <!-- Element that opens the widget on click. It does not have to be an input -->
+        <input placeholder="Search here" id="searchWidgetTrigger" />
+        
     </body>
 </html>
